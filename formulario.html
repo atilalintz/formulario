@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Exemplo de Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form action="action_page.php" method="post">
+          <fieldset>
+            <legend>Exemplo de Formulário:</legend>
+          <!-- Input de checkbox -->
+          <div class="col-25">
+            <input type="checkbox" name="check" value="checado">
+            <label for="checkbox">Aceito compartilhar meus dados</label>
+          </div>
+          <!-- Input de hidden-->    
+          <div class="col-25">
+            <label for="hidden">Nada Hidden</label>
+            <input type="hidden" name="hidden" value="hidden">
+          </div>
+          <!-- Input de Botão -->
+          <div class="col-25">
+            <label for="button">Botão</label>
+            <input type="button" value="Botão">
+          </div>
+          <!-- Input de Reset-->  
+          <div class="col-25">
+            <label for="reset">Reset</label>
+            <input type="reset" name="reset">
+          </div>
+          <!-- Separador linha-->
+          <hr>
+          <!-- Input de Mês-->  
+          <div class="col-25">
+            <label for="month">Mês do ano</label>
+            <input type="month" name="mes">
+          </div>
+          <!-- Input de Data-->  
+          <div class="col-25">
+            <label for="date">Data de nascimento:</label>
+            <input type="date" name="date">
+          </div>
+          <!-- Input de Tempo-->  
+          <div class="col-25">
+            <label for="time">Hora</label>
+            <input type="time" name="tempo">
+          </div>
+          <!-- Input de Week-->  
+          <div class="col-25">
+            <label for="week">Semana</label>
+            <input type="week" name="semana">
+          </div>
+          <!-- Separador linha-->
+          <hr>         
+          <!-- Input de Data e hora-->
+          <div class="col-25">
+            <label for="datetime-local">Data e Hora</label>
+            <input type="datetime-local" name="datetime-local">
+          </div>      
+          <!-- Input de cor -->
+          <div class="col-25">
+            <label for="color">Qual sua cor Preferida?</label>
+            <input type="color" name="color">
+          </div>
+          <!-- Input de arquivo-->    
+          <div class="col-25">          
+            <label for="file">Enviar:</label>
+            <input type="file" name="file">
+          </div>    
+          <!-- Input de imagen-->  
+          <div class="col-25">
+            <label for="image">Imagem</label>
+            <input type="image" src="image.png" alt="Submit" width="48" height="48">
+          </div>
+          <!-- Separador linha-->
+          <hr>
+          <!-- Input de Telefone-->  
+          <div class="col-25">
+            <label for="tel">Telefone</label>
+            <input type="tel" name="telefone">
+          </div>
+           <!-- Input de email -->  
+           <div class="col-25">
+            <label for="email">Email</label>
+            <input type="email" name="email">
+          </div>
+          <!-- Input de Senha Password-->  
+          <div class="col-25">
+            <label for="password">Senha</label>
+            <input type="password" name="senha">
+          </div>
+          <!-- Input de Radio-->  
+          <div class="col-25">
+            <label for="radio">Sexo:</label>
+            <input type="radio" name="sexo" value="feminino">Feminino
+            <input type="radio" name="sexo" value="masculino">Masculino
+            <input type="radio" name="sexo" value="outro">Outro
+          </div>
+          <!-- Separador linha-->
+          <hr>
+          <!-- Input de Range-->  
+          <div class="col-25">
+            <label for="range">Range</label>
+            <input type="range" name="range">
+          </div>          
+          <!-- Input de Numero-->  
+          <div class="col-25">
+            <label for="number">Numero</label>
+            <input type="number" name="numero">
+          </div>
+          <!-- Input de Procurar Search-->  
+          <div class="col-25">
+            <label for="search">Procurar</label>
+            <input type="search" name="procurar">
+          </div>        
+          <!-- Input de URL-->  
+          <div class="col-25">
+            <label for="url">URL</label>
+            <input type="url" name="url">
+          </div>
+          <!-- Separador linha-->
+          <hr>
+          <!-- Input de Testo com label de 25% e Input de 75%-->  
+          <div class="row">
+            <br><br><br>
+            <div class="col-25">
+              <label for="pnome">Primeiro Nome</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="pnome" name="pnome" placeholder="Seu Nome..">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="unome">Ultimo nome</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="unome" name="unome" placeholder="Seu ultimo nome..">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="serieA">Brasileirão 2023 Série A</label>
+            </div>
+            <div class="col-75">
+              <select id="time" name="time">
+                <option value="Selecione seu time" selected disabled>Selecione seu Time</option>
+                <option value="América-MG">América-MG</option>
+                <option value="Athletico-PR">Athletico-PR</option>
+                <option value="Atlético-MG">Atlético-MG</option>
+                <option value="Bahia">Bahia</option>
+                <option value="Botafogo">Botafogo</option>
+                <option value="Corinthians">Corinthians</option>
+                <option value="Coritiba">Coritiba</option>
+                <option value="Cruzeiro">Cruzeiro</option>
+                <option value="Cuiabá">Cuiabá</option>
+                <option value="Flamengo">Flamengo</option>
+                <option value="Fluminense">Fluminense</option>
+                <option value="Fortaleza">Fortaleza</option>
+                <option value="Goiás">Goiás</option>
+                <option value="Grêmio">Grêmio</option>
+                <option value="Internacional">Internacional</option>
+                <option value="Palmeiras">Palmeiras</option>
+                <option value="Red Bull Bragantino">Red Bull Bragantino</option>
+                <option value="Santos">Santos</option>
+                <option value="São Paulo">São Paulo</option>
+                <option value="Vasco">Vasco</option>
+            </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="subject">Comentários</label>
+            </div>
+            <div class="col-75">
+              <textarea id="subject" name="testearea" placeholder="Escreva algo.." style="height:150px"></textarea>
+            </div>
+          </div>
+          <div class="row">
+            <input type="submit" value="Enviar">
+          </div>
+        </fieldset>
+        </form>
+      </div>
+</body>
+</html>
