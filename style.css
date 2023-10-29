@@ -16,8 +16,8 @@
     resize: vertical;
   }
 
-  hr {
-    margin-top: 15px;
+  input[type=image]:hover {
+    transform: scale(2.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
   }
 
   label {
@@ -48,9 +48,17 @@
   .col-25 {
     float: left;
     width: 25%;
-    margin-top: 6px;
+    margin-top: 2px;
   }
   
+  .col-25v {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+    padding-left: 6px;
+    border-left: 2px solid #000;
+  }
+
   .col-75 {
     float: left;
     width: 75%;
