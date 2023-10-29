@@ -3,7 +3,11 @@
 * {
     box-sizing: border-box;
   }
-  
+
+  body {
+    background-color: aqua;
+  }
+
   input[type=text], select, textarea {
     width: 100%;
     padding: 12px;
@@ -32,12 +36,12 @@
   }
   
   input[type=submit]:hover {
-    background-color: #45a049;
+    background-color: #c1c40f;
   }
   
   .container {
     border-radius: 5px;
-    background-color: #f2f2f2;
+    background-color: #9fa3641a;
     padding: 20px;
   }
   
