@@ -3,42 +3,46 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exemplo de Formulário</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-<fieldset>
-<?php
-$checkbox = $_POST["check"];
-$color = $_POST["color"];
-$date = $_POST["date"];
-$datetime_local = $_POST["datetime-local"];
-$email = $_POST["email"];
-$file = $_POST["file"];
-//$hidden = $_POST["hidden"];
-$mes = $_POST["mes"];
-//$image = $_POST["image"];
-$numero = $_POST["numero"];
-$senha = $_POST["senha"];
-$sexo = $_POST["sexo"];
-$range = $_POST["range"];
-$reset = $_POST["reset"];
-$procurar = $_POST["procurar"];
-$telefone = $_POST["telefone"];
-$testo = $_POST["testo"];
-$hora = $_POST["hora"];
-$url = $_POST["url"];
-$semana = $_POST["semana"];
-$pnome = $_POST["pnome"];
-$unome = $_POST["unome"];
-$comentario = $_POST["comentario"];
-//echo $checkbox;
-//echo $hidden;
-//echo $image;
-?>
-<p>Ola <?php echo "$pnome $unome";?>.</p>
-<?php 
+    <div class="container">
+      <h6>Exemplo de Formulário com vários tipos de entrada.</h6>
+        <fieldset>
+        <?php
+        $checkbox = $_POST["check"];
+        $color = $_POST["color"];
+        $date = $_POST["date"];
+        $datetime_local = $_POST["datetime-local"];
+        $email = $_POST["email"];
+        $file = $_POST["file"];
+        //$hidden = $_POST["hidden"];
+        $mes = $_POST["mes"];
+        //$image = $_POST["image"];
+        $numero = $_POST["numero"];
+        $senha = $_POST["senha"];
+        $sexo = $_POST["sexo"];
+        $range = $_POST["range"];
+        $reset = $_POST["reset"];
+        $procurar = $_POST["procurar"];
+        $telefone = $_POST["telefone"];
+        $testo = $_POST["testo"];
+        $hora = $_POST["hora"];
+        $url = $_POST["url"];
+        $semana = $_POST["semana"];
+        $pnome = $_POST["pnome"];
+        $unome = $_POST["unome"];
+        $time = $_POST["time"];
+        $comentario = $_POST["comentario"];
+        //echo $checkbox;
+        //echo $hidden;
+        //echo $image;
+        ?>
+        <p>Ola <?php echo "$pnome $unome";?>.</p>
+        <?php 
     if (isset($_POST["check"])) {?>
     <p>Confira se seus dados estão coretos.</p>
     <p>Você marcou a opção de compartilhar seus dados.</p>
@@ -57,10 +61,13 @@ $comentario = $_POST["comentario"];
     <p>O numero escolhido foi: <?php echo $numero;?></p>
     <p>O termo da busca é: <?php echo $procurar;?></p>
     <p>Sua URL é: <?php echo $url;?></p>
+    <p>Seu time do coração é o <?php echo $time;?></p>
     <p>Seus comentários foram: <?php echo $comentario;?></p>
     <?php }
     else { 
         echo "Você não marcou a opção de compartilhar seus dados.";}?>
-</fieldset>
+        <a href="formulario.html">Voltar</a>
+    </fieldset>
+    </div>
 </body>
 </html> 

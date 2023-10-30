@@ -2,14 +2,16 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exemplo de Formulário</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
+      <h1>Exemplo de Formulário com vários tipos de entrada.</h1>
+      <fieldset>
+        <legend>Exemplo de Formulário:</legend>
         <form action="action_page.php" method="post">
-          <fieldset>
-            <legend>Exemplo de Formulário:</legend>
           <!-- Input de checkbox -->
           <div class="col-25">
            <input type="checkbox" name="check">
@@ -91,7 +93,7 @@
           <!-- Input de Tempo-->  
           <div class="col-25v">
             <label for="time">Horas agora:</label>
-            <input type="time" name="hora">
+            <input type="time" name="hora" valueAsDate>
           </div>
           <!-- Input de Week-->  
           <div class="col-25v">
@@ -102,47 +104,46 @@
           <hr>
           <!-- Input de arquivo-->    
           <div class="col-25">          
-            <label for="file">Enviar:</label>
+            <label for="file">>>></label>
             <input type="file" name="file" value="teste">
-          </div>         
+          </div>    
           <!-- Input de Data e hora-->
           <div class="col-25v">
             <label for="datetime-local">Data e Hora</label>
             <input type="datetime-local" name="datetime-local">
-          </div>      
-          <!-- Input de cor -->
-          <div class="col-25v">
-            <label for="color">Qual sua cor Preferida?</label>
-            <input type="color" name="color">
-          </div>    
+          </div>
           <!-- Input de imagen-->  
           <div class="col-25v">
             <label for="image">Imagem</label>
             <input type="image" src="image.png" alt="Imagem PNG" width="20" height="20">            
           </div>
+          <!-- Input de cor -->
+          <div class="col-25v">
+            <label for="color">Qual sua cor Preferida?</label>
+            <input type="color" name="color">
+          </div>               
           <!-- Separador linha-->
           <hr>
           <!-- Input de Testo com label de 25% e Input de 75%-->  
           <div class="row">
-            <br><br><br>
             <div class="col-25">
-              <label for="pnome">Primeiro Nome</label>
+              <label for="pnome" style="padding-left: 25%">Primeiro Nome</label>              
             </div>
             <div class="col-75">
               <input type="text" id="pnome" name="pnome" placeholder="Seu Nome..">
             </div>
-          </div>
+          </div><hr>
           <div class="row">
             <div class="col-25">
-              <label for="unome">Ultimo nome</label>
+              <label for="unome" style="padding-left: 25%">Ultimo nome</label>              
             </div>
             <div class="col-75">
               <input type="text" id="unome" name="unome" placeholder="Seu ultimo nome..">
             </div>
-          </div>
+          </div><hr>
           <div class="row">
             <div class="col-25">
-              <label for="serieA">Brasileirão 2023 Série A</label>
+              <label for="serieA" style="padding-left: 25%">Brasileirão 2023 Série A</label>              
             </div>
             <div class="col-75">
               <select id="time" name="time">
@@ -157,7 +158,7 @@
                 <option value="Cruzeiro">Cruzeiro</option>
                 <option value="Cuiabá">Cuiabá</option>
                 <option value="Flamengo">Flamengo</option>
-                <option value="Fluminense">Fluminense</option>
+                <option value="Fluminense" selected>Fluminense</option>
                 <option value="Fortaleza">Fortaleza</option>
                 <option value="Goiás">Goiás</option>
                 <option value="Grêmio">Grêmio</option>
@@ -169,20 +170,22 @@
                 <option value="Vasco">Vasco</option>
             </select>
             </div>
-          </div>
+          </div><hr>
           <div class="row">
             <div class="col-25">
-              <label for="subject">Comentários</label>
+              <label for="subject" style="padding-left: 25%">Comentários</label>
             </div>
             <div class="col-75">
               <textarea id="subject" name="comentario" placeholder="Escreva algo.."></textarea>
             </div>
           </div>
-          <div class="row">
-            <input type="submit" value="Enviar">
+          <div class="row"><div class="col-25"></div>
+            <div class="col-75">
+              <input type="submit" value="Enviar">
+            </div>
           </div>
-        </fieldset>
         </form>
+      </fieldset>
       </div>
 </body>
 </html>
