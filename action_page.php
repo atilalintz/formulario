@@ -10,7 +10,7 @@
 
 <body>
     <div class="container">
-      <h6>Exemplo de Formulário com vários tipos de entrada.</h6>
+      <h1>Exemplo de Formulário com vários tipos de entrada.</h1>
         <fieldset>
         <?php
         $checkbox = $_POST["check"];
